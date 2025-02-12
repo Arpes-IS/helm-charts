@@ -2,6 +2,36 @@ apiVersion: v1
 entries:
   thingsboard:
   - apiVersion: v2
+    appVersion: 3.5.1
+    created: "2025-02-12T16:13:15.182986456Z"
+    dependencies:
+    - condition: postgresql-ha.enabled
+      name: postgresql-ha
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 9.4.11
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 9.1.8
+    - name: kafka
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 15.3.4
+    - name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 16.4.5
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.13.2
+    description: A Helm chart for Thingsboard
+    digest: dea37c4954ba2375096512820610484e67f3a5554b310d8845e9b8cd9fd6ddc5
+    home: https://github.com/Arpes-IS/helm-charts
+    icon: https://avatars.githubusercontent.com/u/24291394?s=200&v=4
+    name: thingsboard
+    type: application
+    urls:
+    - https://github.com/Arpes-IS/helm-charts/releases/download/thingsboard-0.1.8/thingsboard-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 3.9.0
     created: "2025-02-10T18:44:12.283407177Z"
     dependencies:
@@ -91,4 +121,4 @@ entries:
     urls:
     - https://github.com/Arpes-IS/helm-charts/releases/download/thingsboard-0.1.5/thingsboard-0.1.5.tgz
     version: 0.1.5
-generated: "2025-02-10T18:44:12.283421424Z"
+generated: "2025-02-12T16:13:15.183008337Z"
